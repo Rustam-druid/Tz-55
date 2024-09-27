@@ -112,12 +112,10 @@
 }
 
 .Burger {
-    padding-bottom: 40px;
-
-    border: 3px solid black;
+    border-left: 3px solid black;
+    padding: 20px;
     width: 100%;
-    margin: auto;
-    height: 100%;
+    margin: 0;
     overflow: auto;
     text-align: center;
     font-weight: bold;
@@ -145,37 +143,15 @@
     }
 }
 
-
-.Ingredients{
-    border: 3px solid black;
-  padding: 20px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-.Ibtn{
-  display: flex;
-    align-items: center;
-    gap: 30px;
-}
-.delete {
-border: none;
-    width: 25px;
-    height: 25px;
-    background: url(assets/delete.png) no-repeat center;
-    background-size: 25px;
-    margin-left: auto;
-}
 .container{
     border: 3px solid black;
     width: 900px;
+    height: 100%;
 }
-
 .main{
-    gap: 20px;
-    padding: 20px ;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
 }
 .header {
     border-bottom:  3px solid black;
@@ -188,7 +164,52 @@ border: none;
     background-color: #ccc;
     height: 70px;
 }
-.btnFood {
-    width: 60px;
-    height: 60px;
+.Ingredients{
+    display: block;
+    height: 100px;
+   padding: 20px;
 }
+.Ibtn{
+  display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.btnFood {
+    padding: 0;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+border: none;
+    background:transparent ;
+}
+.img {
+    border: 3px solid black;
+    width: 50px;
+    transition: 0.5s;
+}
+.img:hover {
+    width: 60px;
+}
+.img:active {
+    width: 45px;
+}
+
+
+.delete {
+    cursor: pointer;
+border: none;
+    width: 25px;
+    height: 25px;
+    background: url(assets/delete.png) no-repeat center;
+    background-size: 25px;
+    margin-left: auto;
+}
+.delete:hover {
+    width: 30px;
+}
+.delete:active {
+    width: 25px;
+}
+
+
+
