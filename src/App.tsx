@@ -75,7 +75,7 @@ const App = () => {
                                 <button type='button' className='btnFood' onClick={() => BtnAdd(i.id)}></button>
                                 <span>{i.name} x{i.count} </span>
                                 {i.count > 0 ? (
-                                    <button type='button' onClick={() => deleteOneItem(i.id)} className='open'>delete</button>
+                                    <button type='button' onClick={() => deleteOneItem(i.id)} className='delete'></button>
                                 ) : null}
                             </div>
                         ))}
